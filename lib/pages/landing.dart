@@ -12,125 +12,101 @@ class LandingPage extends StatelessWidget {
           horizontal: 90,
           vertical: 30,
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: Column(
           children: [
-            Text(
-              'Dampot',
-              style: TextStyle(
-                fontSize: 32,
-                color: Colors.black,
-              ),
-            ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
-                  mainAxisSize: MainAxisSize.min,
+                Text(
+                  'Dampot',
+                  style: TextStyle(
+                    fontSize: 32,
+                    color: Colors.black,
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Text(
-                      "About",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w300,
-                      ),
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          "About",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w300,
+                          ),
+                        ),
+                      ],
                     ),
-                    Container(
-                      width: 18,
-                      height: 2,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    )
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          "Product",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w300,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          "Team",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w300,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          "Contact Us",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w300,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          "Support",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w300,
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      "Product",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w300,
-                      ),
-                    ),
-                    Container(
-                      width: 18,
-                      height: 2,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    )
-                  ],
-                ),
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      "Team",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w300,
-                      ),
-                    ),
-                    Container(
-                      width: 18,
-                      height: 2,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    )
-                  ],
-                ),
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      "Contact Us",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w300,
-                      ),
-                    ),
-                    Container(
-                      width: 66,
-                      height: 2,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    )
-                  ],
-                ),
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      "Support",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w300,
-                      ),
-                    ),
-                    Container(
-                      width: 18,
-                      height: 2,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    )
-                  ],
+                Image.asset(
+                  'login.png',
+                  width: 177,
+                  height: 37,
                 ),
               ],
-            ),
-            Image.asset(
-              'login.png',
-              width: 177,
-              height: 37,
             ),
           ],
         ),
